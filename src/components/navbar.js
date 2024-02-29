@@ -1,25 +1,24 @@
+import { items } from "../data/items";
 import "./navbar.css";
 
 export default function Navbar() {
   return (
     <div className="nav-list">
       <ul className="navbar-item-list">
-        <li>
-          <a href="/">Home</a>
-        </li>
-        <li>
-          <a href="/">Sales</a>
-        </li>
-        <li>
-          <a href="/">Shopping</a>
-        </li>
-        <li>
-          <a href="/">orders</a>
-        </li>
-        <li>
-          <a href="/">contact</a>
-        </li>
+        {items.map((list_item) => (
+          <Navitem item={list_item} />
+        ))}
       </ul>
     </div>
+  );
+}
+
+function Navitem({ item }) {
+  return (
+    <li>
+      <a className="item" href={item.href}>
+        {item.title}
+      </a>
+    </li>
   );
 }

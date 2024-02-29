@@ -1,7 +1,6 @@
 .nav-list {
   height: 10vh;
-  padding-right: 10%;
-  padding-left: 10%;
+
   background-color: black;
   border: 5px solid black;
 }
@@ -10,7 +9,7 @@
   height: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .navbar-item-list li a {
@@ -25,7 +24,7 @@
 }
 
 .navbar-item-list li a:hover {
-    font-size:larger;
-    color: blueviolet;
-    border-bottom: 5px solid blueviolet;
-  }
+  font-size: larger;
+  color: blueviolet;
+  border-bottom: 5px solid blueviolet;
+}
