@@ -1,8 +1,9 @@
 .nav-list {
   height: 10vh;
-
+  width: 100%;
   background-color: black;
-  border: 5px solid black;
+  border-bottom: 5px solid black;
+  border-top: 5px solid black;
 }
 .navbar-item-list {
   width: 100%;
@@ -24,7 +25,6 @@
 }
 
 .navbar-item-list li a:hover {
-  font-size: larger;
   color: blueviolet;
   border-bottom: 5px solid blueviolet;
 }

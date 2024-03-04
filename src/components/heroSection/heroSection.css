@@ -1,0 +1,25 @@
+.heroBody {
+  height: calc(90vh - 10px);
+  width: 100%;
+  position: relative;
+}
+
+.heroImg {
+  height: 100%;
+  width: 100%;
+  background-image: url("./imges/background.jpg");
+  background-size: cover;
+  position: absolute;
+  opacity: 0.6;
+}
+
+.heroText {
+  padding: 30px;
+  height: calc(100% - 60px);
+  width: 50%;
+  color: rgb(0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+}

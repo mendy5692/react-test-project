@@ -1,4 +1,4 @@
-import { items } from "../data/items";
+import { items } from "../../data/items";
 import "./navbar.css";
 
 export default function Navbar() {

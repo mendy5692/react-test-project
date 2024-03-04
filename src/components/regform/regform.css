@@ -1,0 +1,23 @@
+.form-container {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 30px;
+}
+
+.form {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 15px;
+  background-color: rgb(242, 203, 145);
+  border-radius: 8px;
+  border: 5px solid brown;
+}
+
+.form input {
+  height: 5%;
+}
