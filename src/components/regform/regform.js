@@ -14,8 +14,15 @@ export default function RegForm() {
     <div className="form-container">
       <form className="form" onSubmit={handleSubmit}>
         <h3>Register:</h3>
-        <TextField name="name" type="text" label="Name..." min={2} />
-        <TextField name="num" type="tel" label="Phone..," min={9} max={20} />
+        <TextField required name="name" type="text" label="Name..." min={2} />
+        <TextField
+          required
+          name="num"
+          type="tel"
+          label="Phone..,"
+          min={9}
+          max={20}
+        />
         <TextField
           name="dob"
           type="text"
@@ -25,8 +32,9 @@ export default function RegForm() {
           onFocus={(e) => (e.target.type = "date")}
           onBlur={(e) => (e.target.type = "text")}
         />
-        <TextField name="email" type="email" label="Email..." />
+        <TextField required name="email" type="email" label="Email..." />
         <TextField
+          required
           name="pass"
           type="password"
           label="Pass..."
