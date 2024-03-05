@@ -1,10 +1,18 @@
-import { TextField } from "@mui/material";
+import { Button, TextField } from "@mui/material";
 import "./regform.css";
+
+function handleSubmit(e) {
+  e.preventDefault();
+  const formData = new FormData(e.target);
+  const data = Object.fromEntries(formData);
+  console.log(data);
+  e.target.reset();
+}
 
 export default function RegForm() {
   return (
     <div className="form-container">
-      <form className="form">
+      <form className="form" onSubmit={handleSubmit}>
         <h3>Register:</h3>
         <TextField name="name" type="text" label="Name..." min={2} />
         <TextField name="num" type="tel" label="Phone..," min={9} max={20} />
@@ -25,6 +33,9 @@ export default function RegForm() {
           min={3}
           max={20}
         />
+        <Button variant="outlined" type="submit">
+          submit
+        </Button>
       </form>
     </div>
   );
