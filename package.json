@@ -1,5 +1,4 @@
 {
-  "homepage": "https//mendy5692.github.io/react-test-project",
   "name": "react-test",
   "version": "0.1.0",
   "private": true,
@@ -19,7 +18,6 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "predeploy": "npm run boild",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
