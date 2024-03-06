@@ -13,7 +13,7 @@ export default function RegForm() {
   return (
     <div className="form-container">
       <form className="form" onSubmit={handleSubmit}>
-        <h3>Register:</h3>
+        <h2>Register:</h2>
         <TextField required name="name" type="text" label="Name..." min={2} />
         <TextField
           required

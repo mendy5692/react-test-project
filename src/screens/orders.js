@@ -1,3 +1,8 @@
+import Navbar from "../components/navbar/navbar";
+
 export default function Orders() {
-    return <div>orders</div>
+    return <div>
+            <Navbar/>
+            Orders
+    </div>
 }

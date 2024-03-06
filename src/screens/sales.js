@@ -1,3 +1,8 @@
+import Navbar from "../components/navbar/navbar";
+
 export default function Sales() {
-    return <div>sales</div>
+    return <div>
+            <Navbar/>
+            Sales
+    </div>
 }

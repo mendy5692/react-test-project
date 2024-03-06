@@ -8,16 +8,13 @@ ul {
 }
 
 h1 {
-  font-size: 120px;
+  font-size: 10vw;
 }
 
 h2 {
-  font-size: 55px;
+  font-size: 4vw;
 }
 
-h3 {
-  font-size: 30px;
-}
 
 input:-webkit-autofill,
 input:-webkit-autofill:hover,

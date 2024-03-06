@@ -17,7 +17,12 @@ export default function Navbar() {
 function Navitem({ item }) {
   return (
     <li>
-      <a className="item" href={item.href}>
+      <a
+        className={`item ${
+          window.location.pathname === item.href ? "current" : ""
+        }`}
+        href={item.href}
+      >
         {item.title}
       </a>
     </li>

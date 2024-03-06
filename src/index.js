@@ -2,8 +2,6 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./reset.css";
 import reportWebVitals from "./reportWebVitals";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { items } from "./data/items.js";
 import MyRouter from "./router/router.js";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
