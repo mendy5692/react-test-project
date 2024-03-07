@@ -22,3 +22,13 @@ input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
   transition: background-color 5000s ease-in-out 0s;
 }
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.icon_inline {
+  margin-left: 5px;
+  margin-top: 5px;
+}

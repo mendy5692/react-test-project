@@ -4,6 +4,8 @@
   background-color: black;
   border-bottom: 5px solid black;
   border-top: 5px solid black;
+  position: fixed;
+  z-index: 1000;
 }
 .navbar-item-list {
   width: 100%;

@@ -3,7 +3,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: linear-gradient(to right, #817373, #fed7b7, #c3a895);
+  position: relative;
+  top: 10vh;
 }
 
 .form {

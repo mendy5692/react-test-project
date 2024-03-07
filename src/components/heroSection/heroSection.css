@@ -1,7 +1,6 @@
 .heroBody {
   height: calc(90vh - 10px);
   width: 100%;
-  position: relative;
 }
 
 .heroImg {
@@ -9,17 +8,18 @@
   width: 100%;
   background-image: url("./imges/background.jpg");
   background-size: cover;
-  position: absolute;
+  position: fixed;
   opacity: 0.6;
 }
 
 .heroText {
-  padding: 30px;
+  padding: 10px;
   height: calc(100% - 60px);
   width: 50%;
   color: rgb(0, 0, 0);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  position: absolute;
+  top: 10vh;
+  position: relative;
 }

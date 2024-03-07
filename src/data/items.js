@@ -1,32 +1,71 @@
 import Contact from "../screens/contact";
 import Home from "../screens/home";
-import Orders from "../screens/orders";
-import Sales from "../screens/sales";
-import Shopping from "../screens/shopping";
+import Decorations from "../screens/decorations";
+import Art from "../screens/art";
+import Judaica from "../screens/Judaica";
+import MarkunreadIcon from "@mui/icons-material/Markunread";
+import HomeSharpIcon from '@mui/icons-material/HomeSharp';
+import PaletteSharpIcon from '@mui/icons-material/PaletteSharp';
+import { GiCandleHolder } from "react-icons/gi";
+import CategoryIcon from '@mui/icons-material/Category';
 
 export const items = [
   {
-    title: "Home",
+    title: (
+      <div className="row">
+        <p>Home</p>
+        <p className="icon_inline">
+          <HomeSharpIcon />
+        </p>
+      </div>
+    ),
     href: "/",
     element: <Home />,
   },
   {
-    title: "Sales",
-    href: "/sales",
-    element: <Sales />,
+    title: (
+      <div className="row">
+        <p>Art</p>
+        <p className="icon_inline">
+          <PaletteSharpIcon />
+        </p>
+      </div>
+    ),
+    href: "/Art",
+    element: <Art />,
   },
   {
-    title: "Shopping",
-    href: "/shopping",
-    element: <Shopping />,
+    title: (
+      <div className="row">
+        <p>Judaica</p>
+        <p className="icon_inline">
+          <GiCandleHolder />
+        </p>
+      </div>
+    ),
+    href: "/Judaica",
+    element: <Judaica />,
+  },
+  { title: (
+    <div className="row">
+      <p>Decorations</p>
+      <p className="icon_inline">
+        <CategoryIcon />
+      </p>
+    </div>
+  ),
+    href: "/Decorations",
+    element: <Decorations />,
   },
   {
-    title: "Orders",
-    href: "/orders",
-    element: <Orders />,
-  },
-  {
-    title: "Contact",
+    title: (
+      <div className="row">
+        <p>Contact</p>
+        <p className="icon_inline">
+          <MarkunreadIcon />
+        </p>
+      </div>
+    ),
     href: "/contact",
     element: <Contact />,
   },
