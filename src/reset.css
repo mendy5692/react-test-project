@@ -15,6 +15,17 @@ h2 {
   font-size: 4vw;
 }
 
+h3 {
+  font-size: 2vw;
+}
+
+h4 {
+  font-size: 1.3vw;
+}
+
+h5 {
+  font-size: 1vw;
+}
 
 input:-webkit-autofill,
 input:-webkit-autofill:hover,

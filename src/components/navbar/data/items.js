@@ -1,13 +1,13 @@
-import Contact from "../screens/contact";
-import Home from "../screens/home";
-import Decorations from "../screens/decorations";
-import Art from "../screens/art";
-import Judaica from "../screens/Judaica";
+import Contact from "../../../screens/contact";
+import Home from "../../../screens/home";
+import Decorations from "../../../screens/decorations/decorations";
+import Art from "../../../screens/art/art";
 import MarkunreadIcon from "@mui/icons-material/Markunread";
-import HomeSharpIcon from '@mui/icons-material/HomeSharp';
-import PaletteSharpIcon from '@mui/icons-material/PaletteSharp';
+import HomeSharpIcon from "@mui/icons-material/HomeSharp";
+import PaletteSharpIcon from "@mui/icons-material/PaletteSharp";
 import { GiCandleHolder } from "react-icons/gi";
-import CategoryIcon from '@mui/icons-material/Category';
+import CategoryIcon from "@mui/icons-material/Category";
+import Judaica from "../../../screens/judaica/Judaica";
 
 export const items = [
   {
@@ -31,7 +31,7 @@ export const items = [
         </p>
       </div>
     ),
-    href: "/Art",
+    href: "/art",
     element: <Art />,
   },
   {
@@ -46,14 +46,15 @@ export const items = [
     href: "/Judaica",
     element: <Judaica />,
   },
-  { title: (
-    <div className="row">
-      <p>Decorations</p>
-      <p className="icon_inline">
-        <CategoryIcon />
-      </p>
-    </div>
-  ),
+  {
+    title: (
+      <div className="row">
+        <p>Decorations</p>
+        <p className="icon_inline">
+          <CategoryIcon />
+        </p>
+      </div>
+    ),
     href: "/Decorations",
     element: <Decorations />,
   },

@@ -1,4 +1,4 @@
-import { items } from "../../data/items";
+import { items } from "./data/items";
 import "./navbar.css";
 import { nanoid } from "nanoid";
 

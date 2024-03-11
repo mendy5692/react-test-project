@@ -1,0 +1,32 @@
+.grid_item {
+  display: flex;
+  flex-direction: column;
+  width: 40vh;
+  height: 60vh;
+  border: solid black;
+  border-radius: 25px;
+  padding: 30px;
+  align-items: center;
+  margin: auto;
+}
+
+.grid_item img {
+  height: 50%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.grid_container {
+    position: relative;
+    top: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .grid {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+  }
