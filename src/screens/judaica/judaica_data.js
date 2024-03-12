@@ -1,0 +1,1 @@
+export const judaica_grid_data_list = []

@@ -1,13 +1,41 @@
+.grid-container {
+  position: relative;
+  top: 12vh;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin: 30px auto;
+  width: 80%;
+}
+
+.grid-container input {
+  height: 50px;
+  padding: 0 25px;
+}
+
+.grid {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  justify-content: center;
+}
+
 .grid_item {
   display: flex;
   flex-direction: column;
-  width: 40vh;
-  height: 60vh;
+  width: auto;
+  height: auto;
   border: solid black;
   border-radius: 25px;
   padding: 30px;
   align-items: center;
-  margin: auto;
+  cursor: pointer;
+  transition: all 1s;
+}
+
+.grid_item:hover {
+  scale: 105%;
 }
 
 .grid_item img {
@@ -16,17 +44,20 @@
   object-fit: contain;
 }
 
-.grid_container {
-    position: relative;
-    top: 20vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .grid {
-    width: 90%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
-  }
+.row-toolsBar {
+  display: flex;
+  width: 100%;
+}
+
+.select-choich {
+  margin-right: 30px;
+}
+
+.standard-basic {
+  width: 30%;
+  transition: all 1s;
+}
+
+.standard-basic:hover {
+  width: 100%;
+}

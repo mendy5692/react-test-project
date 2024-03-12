@@ -5,6 +5,7 @@
   border-bottom: 5px solid black;
   border-top: 5px solid black;
   position: fixed;
+  top: 0px;
   z-index: 1000;
 }
 .navbar-item-list {
@@ -34,4 +35,5 @@
 
 .current {
   color: blueviolet !important;
+  border-bottom: 5px solid blueviolet !important;
 }
