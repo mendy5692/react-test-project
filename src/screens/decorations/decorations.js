@@ -7,6 +7,7 @@ export default function Decorations() {
   return (
     <div>
       <Navbar />
+      <div className="heroImg"></div>
       <Grid grid_items_list={Decorations_grid_data_list} />
     </div>
   );

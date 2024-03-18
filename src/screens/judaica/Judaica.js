@@ -6,6 +6,7 @@ export default function Judaica() {
   return (
     <div>
       <Navbar />
+      <div className="heroImg"></div>
       <Grid grid_items_list={judaica_grid_data_list} />
     </div>
   );

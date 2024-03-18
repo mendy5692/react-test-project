@@ -1,4 +1,4 @@
-export const Art_grid_data_list = [
+export  const Art_grid_data_list = [
   {
     title: "Synagogue",
     manufacturer: "Haim Glicksberg",
