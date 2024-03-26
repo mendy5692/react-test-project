@@ -2,11 +2,19 @@ import { useState } from "react";
 import "./grid.css";
 import { SortProducts } from "../globalComponents/sortProducts";
 import { nanoid } from "nanoid";
-import { InputLabel, MenuItem, Select, TextField } from "@mui/material";
+import {
+  CircularProgress,
+  InputLabel,
+  MenuItem,
+  Select,
+  TextField,
+} from "@mui/material";
+import { useLoadingContext } from "../../contexts/loadingContext";
 
 export default function Grid({ grid_items_list }) {
   const [search, setSearch] = useState("");
   const [sortBy, setSortBy] = useState(0);
+  const { loading } = useLoadingContext();
 
   const final_items_list = grid_items_list
     .filter((p) => p.title.includes(search))
@@ -29,21 +37,25 @@ export default function Grid({ grid_items_list }) {
           </Select>
         </div>
         <TextField
-       className="standard-basic"
-        label="Search..."
-        variant="standard"
-        onChange={(e) => {
-          setSearch(e.target.value);
-        }}
-      />
+          className="standard-basic"
+          label="Search..."
+          variant="standard"
+          onChange={(e) => {
+            setSearch(e.target.value);
+          }}
+        />
       </div>
-      <div className="grid">
-        {final_items_list.length > 0 ? (
-          final_items_list
-        ) : (
-          <p>No Products Found</p>
-        )}
-      </div>
+      {loading ? (
+        <CircularProgress />
+      ) : (
+        <div className="grid">
+          {final_items_list.length > 0 ? (
+            final_items_list
+          ) : (
+            <p>No Products Found</p>
+          )}
+        </div>
+      )}
     </div>
   );
 }
@@ -54,7 +66,7 @@ function GridItem({ item }) {
       <img src={item.img_url} alt="img" />
       <h2>{item.price + "$"}</h2>
       <h3>{item.title}</h3>
-      <h4>{item.details}</h4>
+      <h4>{item.desc}</h4>
     </div>
   );
 }

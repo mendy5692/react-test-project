@@ -3,11 +3,14 @@ import ReactDOM from "react-dom/client";
 import "./reset.css";
 import reportWebVitals from "./reportWebVitals";
 import MyRouter from "./router/router.js";
+import LoadingProvider from "./contexts/loadingContext.js";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <MyRouter />
+    <LoadingProvider>
+      <MyRouter />
+    </LoadingProvider>
   </React.StrictMode>
 );
 
