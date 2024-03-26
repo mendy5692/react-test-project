@@ -1,15 +1,15 @@
 import Contact from "../../../screens/contact";
 import Home from "../../../screens/home";
-import Decorations from "../../../screens/decorations/decorations";
-import Art from "../../../screens/art/art";
+import Decorations from "../../../screens/decorations";
+import Art from "../../../screens/art";
 import MarkunreadIcon from "@mui/icons-material/Markunread";
 import HomeSharpIcon from "@mui/icons-material/HomeSharp";
 import PaletteSharpIcon from "@mui/icons-material/PaletteSharp";
 import { GiCandleHolder } from "react-icons/gi";
 import CategoryIcon from "@mui/icons-material/Category";
-import Judaica from "../../../screens/judaica/Judaica";
+import Judaica from "../../../screens/Judaica";
 import { GrUserAdmin } from "react-icons/gr";
-import Admin from "../../../screens/admin/admin";
+import Admin from "../../../screens/admin";
 
 export const items = [
   {

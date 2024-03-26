@@ -1,17 +1,17 @@
 import { useEffect, useState } from "react";
-import Grid from "../../components/grid/grid";
-import Navbar from "../../components/navbar/navbar";
-import { useLoadingContext } from "../../contexts/loadingContext";
+import Grid from "../components/grid/grid";
+import Navbar from "../components/navbar/navbar";
+import { useLoadingContext } from "../contexts/loadingContext";
 import axios from "axios";
 
-export default function Judaica() {
+export default function Decorations() {
   const [products, setProducts] = useState([]);
   const { setLoading } = useLoadingContext();
   useEffect(() => {
-    const getAllJudaica = async () => {
+    const getAlldecorations = async () => {
       try {
         setLoading(true);
-        const result = await axios.get("http://localhost:3001/products");
+        const result = await axios.get("http://localhost:3001/decorations");
         setProducts(result.data);
       } catch (error) {
         console.error(error);
@@ -19,7 +19,7 @@ export default function Judaica() {
         setLoading(false);
       }
     };
-    getAllJudaica();
+    getAlldecorations();
   }, []);
 
   return (
