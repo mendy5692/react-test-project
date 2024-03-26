@@ -8,6 +8,8 @@ import PaletteSharpIcon from "@mui/icons-material/PaletteSharp";
 import { GiCandleHolder } from "react-icons/gi";
 import CategoryIcon from "@mui/icons-material/Category";
 import Judaica from "../../../screens/judaica/Judaica";
+import { GrUserAdmin } from "react-icons/gr";
+import Admin from "../../../screens/admin/admin";
 
 export const items = [
   {
@@ -69,5 +71,17 @@ export const items = [
     ),
     href: "/contact",
     element: <Contact />,
+  },
+  {
+    title: (
+      <div className="row">
+        <p>Admin</p>
+        <p className="icon_inline">
+          <GrUserAdmin />
+        </p>
+      </div>
+    ),
+    href: "/Admin",
+    element: <Admin />,
   },
 ];
