@@ -5,14 +5,13 @@ import { useLoadingContext } from "../contexts/loadingContext";
 import axios from "axios";
 
 export default function Art() {
-  const api = process.env.SERVER;
   const [products, setProducts] = useState([]);
   const { setLoading } = useLoadingContext();
   useEffect(() => {
     const getAllart = async () => {
       try {
         setLoading(true);
-        const result = await axios.get(`${api}/art`);
+        const result = await axios.get("http://localhost:3001/art");
         setProducts(result.data);
       } catch (error) {
         console.error(error);
