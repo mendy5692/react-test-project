@@ -11,7 +11,7 @@ export default function Judaica() {
     const getAllJudaica = async () => {
       try {
         setLoading(true);
-        const result = await axios.get("http://localhost:3001/judaica");
+        const result = await axios.get(`${process.env.REACT_APP_SERVER}/judaica`);
         setProducts(result.data);
       } catch (error) {
         console.error(error);

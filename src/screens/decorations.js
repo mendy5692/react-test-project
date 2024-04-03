@@ -11,7 +11,7 @@ export default function Decorations() {
     const getAlldecorations = async () => {
       try {
         setLoading(true);
-        const result = await axios.get("http://localhost:3001/decorations");
+        const result = await axios.get(`${process.env.REACT_APP_SERVER}/decorations`);
         setProducts(result.data);
       } catch (error) {
         console.error(error);

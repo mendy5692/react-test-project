@@ -4,6 +4,7 @@ import Navbar from "../components/navbar/navbar";
 import { useLoadingContext } from "../contexts/loadingContext";
 import axios from "axios";
 
+
 export default function Art() {
   const [products, setProducts] = useState([]);
   const { setLoading } = useLoadingContext();
@@ -11,7 +12,7 @@ export default function Art() {
     const getAllart = async () => {
       try {
         setLoading(true);
-        const result = await axios.get("http://localhost:3001/art");
+        const result = await axios.get(`${process.env.REACT_APP_SERVER}/art`);
         setProducts(result.data);
       } catch (error) {
         console.error(error);
