@@ -4,7 +4,6 @@ import Navbar from "../components/navbar/navbar";
 import { useLoadingContext } from "../contexts/loadingContext";
 import axios from "axios";
 
-
 export default function Art() {
   const [products, setProducts] = useState([]);
   const { setLoading } = useLoadingContext();
