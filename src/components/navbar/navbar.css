@@ -26,7 +26,7 @@
   border-bottom: 0.8vw solid black;
   transition: 1s;
   font-size: 2.5vw;
-  @media only screen and (max-width: 1080px) {
+  @media only screen and (max-width: 600px) {
     font-size: 2vw;
   }
 }
@@ -43,7 +43,7 @@
 
 .icon_inline {
   font-size: 2.5vw;
-  @media only screen and (max-width: 1080px) {
+  @media only screen and (max-width: 600px) {
     font-size: 2vw;
   }
 }
@@ -51,10 +51,9 @@
 .disply_nav_item {
   display: flex;
   flex-direction: row;
-  @media only screen and (max-width: 1080px) {
+  @media only screen and (max-width: 600px) {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 }
-
