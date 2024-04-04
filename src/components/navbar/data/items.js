@@ -2,15 +2,15 @@ import Contact from "../../../screens/contact";
 import Home from "../../../screens/home";
 import Decorations from "../../../screens/decorations";
 import Art from "../../../screens/art";
-import MarkunreadIcon from "@mui/icons-material/Markunread";
-import HomeSharpIcon from "@mui/icons-material/HomeSharp";
-import PaletteSharpIcon from "@mui/icons-material/PaletteSharp";
 import { GiCandleHolder } from "react-icons/gi";
-import CategoryIcon from "@mui/icons-material/Category";
 import Judaica from "../../../screens/Judaica";
 import { GrUserAdmin } from "react-icons/gr";
 import Admin from "../../../screens/admin";
 import "../navbar.css";
+import { IoMdHome } from "react-icons/io";
+import { IoColorPaletteSharp } from "react-icons/io5";
+import { MdCategory } from "react-icons/md";
+import { MdMarkunread } from "react-icons/md";
 
 export const items = [
   {
@@ -18,7 +18,7 @@ export const items = [
       <div className="disply_nav_item">
         <p>Home</p>
         <p className="icon_inline">
-          <HomeSharpIcon style={{ fontSize: '2.5vw' }}/>
+          <IoMdHome />
         </p>
       </div>
     ),
@@ -30,7 +30,7 @@ export const items = [
       <div className="disply_nav_item">
         <p>Art</p>
         <p className="icon_inline">
-          <PaletteSharpIcon style={{ fontSize: '2.5vw' }}/>
+          <IoColorPaletteSharp />
         </p>
       </div>
     ),
@@ -54,7 +54,7 @@ export const items = [
       <div className="disply_nav_item">
         <p>Decorations</p>
         <p className="icon_inline">
-          <CategoryIcon style={{ fontSize: '2.5vw' }}/>
+          <MdCategory />
         </p>
       </div>
     ),
@@ -66,7 +66,7 @@ export const items = [
       <div className="disply_nav_item">
         <p>Contact</p>
         <p className="icon_inline">
-          <MarkunreadIcon style={{ fontSize: '2.5vw' }}/>
+          <MdMarkunread />
         </p>
       </div>
     ),
