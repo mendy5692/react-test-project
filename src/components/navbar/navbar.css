@@ -2,8 +2,8 @@
   height: 10vh;
   width: 100%;
   background-color: black;
-  border-bottom: 5px solid black;
-  border-top: 5px solid black;
+  border-bottom: 0.8vw solid black;
+  border-top: 0.8vw solid black;
   position: fixed;
   top: 0px;
   z-index: 1000;
@@ -23,7 +23,7 @@
   justify-content: center;
   text-decoration: none;
   color: white;
-  border-bottom: 5px solid black;
+  border-bottom: 0.8vw solid black;
   transition: 1s;
   font-size: 2.5vw;
   @media only screen and (max-width: 1080px) {
@@ -33,12 +33,12 @@
 
 .navbar-item-list li a:hover {
   color: blueviolet;
-  border-bottom: 5px solid blueviolet;
+  border-bottom: 0.8vw solid blueviolet;
 }
 
 .current {
   color: blueviolet !important;
-  border-bottom: 5px solid blueviolet !important;
+  border-bottom: 0.8vw solid blueviolet !important;
 }
 
 .icon_inline {
