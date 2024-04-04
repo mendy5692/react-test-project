@@ -17,6 +17,9 @@
   display: grid;
   width: 100%;
   grid-template-columns: repeat(3, 1fr);
+  @media only screen and (max-width: 1080px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
   gap: 30px;
   justify-content: center;
   margin-bottom: 5vh;
@@ -49,7 +52,7 @@
 
 .row-toolsBar {
   display: flex;
-  width: 100%;
+  width: 93%;
   background-color: rgb(171, 213, 234);
   opacity: 0.8;
   border-radius: 25px;
