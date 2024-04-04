@@ -37,3 +37,18 @@
   color: blueviolet !important;
   border-bottom: 5px solid blueviolet !important;
 }
+
+.icon_inline {
+  font-size: 2.5vw;
+}
+
+.disply_nav_item {
+  display: flex;
+  flex-direction: row;
+  @media only screen and (max-width: 1080px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+

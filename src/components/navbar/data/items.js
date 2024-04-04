@@ -10,14 +10,15 @@ import CategoryIcon from "@mui/icons-material/Category";
 import Judaica from "../../../screens/Judaica";
 import { GrUserAdmin } from "react-icons/gr";
 import Admin from "../../../screens/admin";
+import "../navbar.css";
 
 export const items = [
   {
     title: (
-      <div className="row">
+      <div className="disply_nav_item">
         <p>Home</p>
         <p className="icon_inline">
-          <HomeSharpIcon />
+          <HomeSharpIcon style={{ fontSize: '2.5vw' }}/>
         </p>
       </div>
     ),
@@ -26,10 +27,10 @@ export const items = [
   },
   {
     title: (
-      <div className="row">
+      <div className="disply_nav_item">
         <p>Art</p>
         <p className="icon_inline">
-          <PaletteSharpIcon />
+          <PaletteSharpIcon style={{ fontSize: '2.5vw' }}/>
         </p>
       </div>
     ),
@@ -38,7 +39,7 @@ export const items = [
   },
   {
     title: (
-      <div className="row">
+      <div className="disply_nav_item">
         <p>Judaica</p>
         <p className="icon_inline">
           <GiCandleHolder />
@@ -50,10 +51,10 @@ export const items = [
   },
   {
     title: (
-      <div className="row">
+      <div className="disply_nav_item">
         <p>Decorations</p>
         <p className="icon_inline">
-          <CategoryIcon />
+          <CategoryIcon style={{ fontSize: '2.5vw' }}/>
         </p>
       </div>
     ),
@@ -62,10 +63,10 @@ export const items = [
   },
   {
     title: (
-      <div className="row">
+      <div className="disply_nav_item">
         <p>Contact</p>
         <p className="icon_inline">
-          <MarkunreadIcon />
+          <MarkunreadIcon style={{ fontSize: '2.5vw' }}/>
         </p>
       </div>
     ),
@@ -74,7 +75,7 @@ export const items = [
   },
   {
     title: (
-      <div className="row">
+      <div className="disply_nav_item">
         <p>Admin</p>
         <p className="icon_inline">
           <GrUserAdmin />
